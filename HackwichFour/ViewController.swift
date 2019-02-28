@@ -8,7 +8,28 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+    
+    @IBOutlet var tableView: UITableView!
+    
+    var myFriends = ["Luca", "Destiny", "Cobi", "Matt", "Alika", "Ashley", "Shynia", "Landon", "Nate", "Arion", "Kylie", "Shanna", "Christine", "Jon"]
+    
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int { return myFriends.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+    let cell = tableView.dequeueReusableCell(withIdentifier: "cellReuseIdentifier")!
+    
+    let text = myFriends[indexPath.row]
+      
+        cell.textLabel?.text = text
+        
+        return cell
+
+    }
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
