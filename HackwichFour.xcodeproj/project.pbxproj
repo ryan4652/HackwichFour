@@ -14,6 +14,8 @@
 		94245AE822286FF3008AE640 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94245AE622286FF3008AE640 /* LaunchScreen.storyboard */; };
 		94245AF322286FF3008AE640 /* HackwichFourTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94245AF222286FF3008AE640 /* HackwichFourTests.swift */; };
 		94245AFE22286FF3008AE640 /* HackwichFourUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94245AFD22286FF3008AE640 /* HackwichFourUITests.swift */; };
+		94A783BA22586E8F00719BFF /* Property List.plist in Resources */ = {isa = PBXBuildFile; fileRef = 94A783B922586E8F00719BFF /* Property List.plist */; };
+		94A783BE2258721D00719BFF /* detailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A783BD2258721D00719BFF /* detailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		94245AF922286FF3008AE640 /* HackwichFourUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HackwichFourUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		94245AFD22286FF3008AE640 /* HackwichFourUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HackwichFourUITests.swift; sourceTree = "<group>"; };
 		94245AFF22286FF3008AE640 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94A783B922586E8F00719BFF /* Property List.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Property List.plist"; sourceTree = "<group>"; };
+		94A783BD2258721D00719BFF /* detailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = detailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +101,10 @@
 		94245ADC22286FF1008AE640 /* HackwichFour */ = {
 			isa = PBXGroup;
 			children = (
+				94A783B922586E8F00719BFF /* Property List.plist */,
 				94245ADD22286FF1008AE640 /* AppDelegate.swift */,
 				94245ADF22286FF1008AE640 /* ViewController.swift */,
+				94A783BD2258721D00719BFF /* detailViewController.swift */,
 				94245AE122286FF1008AE640 /* Main.storyboard */,
 				94245AE422286FF3008AE640 /* Assets.xcassets */,
 				94245AE622286FF3008AE640 /* LaunchScreen.storyboard */,
@@ -193,13 +199,16 @@
 				TargetAttributes = {
 					94245AD922286FF1008AE640 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 					};
 					94245AED22286FF3008AE640 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 						TestTargetID = 94245AD922286FF1008AE640;
 					};
 					94245AF822286FF3008AE640 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 						TestTargetID = 94245AD922286FF1008AE640;
 					};
 				};
@@ -231,6 +240,7 @@
 			files = (
 				94245AE822286FF3008AE640 /* LaunchScreen.storyboard in Resources */,
 				94245AE522286FF3008AE640 /* Assets.xcassets in Resources */,
+				94A783BA22586E8F00719BFF /* Property List.plist in Resources */,
 				94245AE322286FF1008AE640 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -258,6 +268,7 @@
 			files = (
 				94245AE022286FF1008AE640 /* ViewController.swift in Sources */,
 				94245ADE22286FF1008AE640 /* AppDelegate.swift in Sources */,
+				94A783BE2258721D00719BFF /* detailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -441,7 +452,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = UHWO.org.HackwichFour;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -459,7 +470,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = UHWO.org.HackwichFour;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -479,7 +490,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = UHWO.org.HackwichFourTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HackwichFour.app/HackwichFour";
 			};
@@ -500,7 +511,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = UHWO.org.HackwichFourTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HackwichFour.app/HackwichFour";
 			};
@@ -520,7 +531,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = UHWO.org.HackwichFourUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = HackwichFour;
 			};
@@ -540,7 +551,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = UHWO.org.HackwichFourUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = HackwichFour;
 			};
